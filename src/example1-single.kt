@@ -53,6 +53,9 @@ fun doStuff() {
 
     // OPTION TWO: explicitly defined anonymous function
     list.myMap( fun(input: String): String {
+        // careful with the return statement when used like this,
+        // might need to use the "qualified return' syntax - see the
+        // Kotlin docs for more details.
         return input.toUpperCase()
     })
 

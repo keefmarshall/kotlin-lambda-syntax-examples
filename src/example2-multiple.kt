@@ -46,6 +46,9 @@ fun doMoreStuff() {
 
     // OPTION TWO: fully explicitly defined anonymous function:
     list.mapWithConstant(3, fun(a: Int, b: Int): Int {
+        // careful with the return statement when used like this,
+        // might need to use the "qualified return' syntax - see the
+        // Kotlin docs for more details.
         return a + b
     })
 
