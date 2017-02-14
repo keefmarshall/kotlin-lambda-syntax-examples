@@ -10,13 +10,13 @@
  *
  * Look at 'doStuff()' below to see the different ways we can call it.
  */
-fun <K, V> List<K>.myMap( mapfun : (K) -> V ) : List<V> {
+fun <K, V> List<K>.myMap( mapfun: (K) -> V ): List<V> {
 
     val result : MutableList<V> = mutableListOf()
 
     (0..this.size).forEach {
-        val current : K = this[it]
-        val newThing : V = mapfun(current)
+        val current: K = this[it]
+        val newThing: V = mapfun(current)
         result.add(newThing)
     }
 
